@@ -8,9 +8,7 @@ function Todolist(){
 
     const todos=useSelector((state)=>state.todo.todos)
     const [text,setText]=useState("")
-    const dispatch=useDispatch()
-    // console.log(todos);
-
+    const dispatch=useDispatch();
     const handleAddTodo = () =>{
         if(text.trim()){
             dispatch(addTodo(text))
