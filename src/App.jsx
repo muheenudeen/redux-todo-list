@@ -11,7 +11,7 @@ function App() {
   const dispatch=useDispatch()
 
   return (
-    <>
+    <div>
 
       <p>{count}</p>
       <button onClick={()=>dispatch(increment())}>increment</button>
@@ -21,7 +21,7 @@ function App() {
         <Form/>
         name:{name}
         <div style={{width:'100px',height:'100px',backgroundColor:name}}></div>
-         </>
+         </div>
   )
 }
 
